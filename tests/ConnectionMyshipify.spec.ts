@@ -35,6 +35,8 @@ await page.getByTestId('years').selectOption({ value: '1998' });
 
 //await page.locator('#Country').click();
 //await page.getByText('India').click();
+
+// content only in awa
  
 
 //await page.getByRole('button', { name: 'days' }).setChecked(true);
