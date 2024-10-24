@@ -3,12 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "clean:allure": "rimraf allure-results && rimraf allure-report",
+    "test": "playwright test",
+    "allure:generate": "allure generate --clean",
+    "allure:open": "allure open",
+    "test:allure": "npm run clean:allure && npm run test || true && npm run allure:generate"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.48.1",
-    "@types/node": "^22.7.5"
+    "@types/node": "^22.7.5",
+    "allure-commandline": "^2.31.0",
+    "allure-playwright": "^3.0.5",
+    "rimraf": "^6.0.1"
   }
 }

@@ -7,8 +7,6 @@ await page.goto('https://automationexercise.com/');
 //Email1
 await page.getByText(' Signup / Login').click(); //bouton dinscription
 await page.getByPlaceholder ('Name').fill('Awa THIOUNE'); //nom complet
-//await page.getByPlaceholder ('Email Address').fill('awatestauto@yopmail.com');
-//await page.locator('xpath=//*[@id="form"]/div/div/div[3]/div/form/input[3]').fill('awatestauto@yopmail.com');//Email1
 await page.getByTestId('signup-email').fill('awatestauto@yopmail.com');
 
 await page.getByRole('button', { name: 'Signup' }).click(); //signupBtm
@@ -28,6 +26,7 @@ await page.locator('#state').fill('SENEGAL'); //Etat
 await page.locator('#city').fill('Dakar');  //Ville
 await page.locator('#zipcode').fill('17893'); //Code postal
 await page.locator('#mobile_number').fill('778888888'); //Telephone
+//await page.getByTestId('days').selectOption({ value: '6' });
 await page.getByTestId('days').selectOption({ value: '6' });
 await page.getByTestId('months').selectOption({ value: '6' });
 await page.getByTestId('years').selectOption({ value: '1998' });
