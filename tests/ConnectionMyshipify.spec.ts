@@ -1,7 +1,9 @@
 import { test, expect } from '@playwright/test';
 
 
-test('Connexion', async ({ page }) => {
+test('@KAN-3 Connexion', async ({ page }) => {
+  //@KAN-1
+  //test.only('@KAN-1 Ajout collaborateur', async ({ collaboratorPage, page}) =>
 await page.goto('https://automationexercise.com/');
 //await page.getByRole('button', { name: 'Log In' }).click()
 //Email1
