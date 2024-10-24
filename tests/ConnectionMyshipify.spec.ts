@@ -23,7 +23,7 @@ await page.getByLabel('Receive special offers from our partners!').check(); //of
 await page.locator('#first_name').fill('Mamadou'); //Prenom
 await page.locator('#last_name').fill('DIOP'); //Nom
 await page.locator('#company').fill('Agiltoo'); //Nom entreprise
-await page.locator('#address1').fill('Ouest Foire'); //Adresse1
+await page.locator('#address1').fill('Ouest Foire'); //Adress1
 await page.locator('#state').fill('SENEGAL'); //Etat
 await page.locator('#city').fill('Dakar');  //Ville
 await page.locator('#zipcode').fill('17893'); //Code postal
