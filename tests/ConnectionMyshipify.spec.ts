@@ -15,7 +15,7 @@ await page.getByRole('button', { name: 'Signup' }).click(); //signupBtm
 await page.locator('#id_gender2').click(); //genreFeminin
 await page.locator('#password').fill('Passer@123'); //motdepasse
 
-await page.getByLabel('Sign up for our newsletter!').check(); //newsletterCbx
+await page.getByLabel('Sign up for our newsletter!').check(); //newsletterCbxs
 await page.getByLabel('Receive special offers from our partners!').check(); //offersCbx
 
 //Saisie des champs
