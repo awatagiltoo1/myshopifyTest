@@ -1,4 +1,5 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","328","has title","chromium","Fri Oct 25 08:53:16 UTC 2024","passed","Fri Oct 25 08:53:16 UTC 2024","","example.spec.ts","",""
-"","2314","@KAN-3 Connexion","chromium","Fri Oct 25 08:53:13 UTC 2024","passed","Fri Oct 25 08:53:16 UTC 2024","","ConnectionMyshipify.spec.ts","",""
-"","465","get started link","chromium","Fri Oct 25 08:53:16 UTC 2024","passed","Fri Oct 25 08:53:17 UTC 2024","","example.spec.ts","",""
+"","2639","@KAN-8 Connexion utilisateur","chromium","Wed Oct 30 15:21:16 UTC 2024","passed","Wed Oct 30 15:21:19 UTC 2024","","InscriptionFixture.spec.ts","",""
+"","475","get started link","chromium","Wed Oct 30 15:21:16 UTC 2024","passed","Wed Oct 30 15:21:16 UTC 2024","","example.spec.ts","",""
+"","30015","Connexion","chromium","Wed Oct 30 15:20:44 UTC 2024","broken","Wed Oct 30 15:21:14 UTC 2024","","ConnectionMyshipify.spec.ts","",""
+"","470","has title","chromium","Wed Oct 30 15:21:15 UTC 2024","passed","Wed Oct 30 15:21:15 UTC 2024","","example.spec.ts","",""
