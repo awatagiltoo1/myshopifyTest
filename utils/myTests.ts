@@ -1,16 +1,33 @@
 import {test as base } from '@playwright/test';
 import { Inscriptionpage } from '../pages/Inscriptionpage';
+import { Connexionpage } from '../pages/Connexionpage';
 
 
 
 type TestFixtures = {
+    inscriptionpage: Inscriptionpage;
+    connexionpage: Connexionpage;
+  }
+  
+  export const test = base.extend<TestFixtures>({
+    inscriptionpage: async ({ page }, use) => {
+    const inscriptionpage = new Inscriptionpage(page);
+    await inscriptionpage.goto();
+      await use(inscriptionpage);
+    },  
 
-    Inscriptionpage: Inscriptionpage;
-}
 
-export const test = base.extend<TestFixtures>({
-    Inscriptionpage: async ({ page }, use) => {
-   // const Inscriptionpage = new Inscriptionpage(page);
-   // await use(Inscriptionpage);
-    },
-})
+    connexionpage: async ({ page }, use) => {
+      const connexionpage = new Connexionpage(page);
+      await use(connexionpage);
+  },
+
+
+  })
+
+  
+
+
+
+
+export { expect } from '@playwright/test';

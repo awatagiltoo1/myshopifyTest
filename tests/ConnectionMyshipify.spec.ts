@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 
-test('@KAN-3 Connexion', async ({ page }) => {
+test('Connexion', async ({ page }) => {
   //@KAN-1
   //test.only('@KAN-1 Ajout collaborateur', async ({ collaboratorPage, page}) =>
 await page.goto('https://automationexercise.com/');
@@ -32,7 +32,7 @@ await page.locator('#mobile_number').fill('778888888'); //Telephone
 await page.getByTestId('days').selectOption({ value: '6' });
 await page.getByTestId('months').selectOption({ value: '6' });
 await page.getByTestId('years').selectOption({ value: '1998' });
-
+await page.getByText('Create Account').click();
 
 //await page.locator('#Country').click();
 //await page.getByText('India').click();
